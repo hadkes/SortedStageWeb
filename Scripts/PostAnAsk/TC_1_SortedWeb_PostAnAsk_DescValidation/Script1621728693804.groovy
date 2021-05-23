@@ -58,7 +58,7 @@ try {
 	'Verify too long description error message'
 	String tooLongErrorMessage = WebUI.getText(findTestObject('Object Repository/PostAnAsk/TooLongDescErrorMessage'))
 	
-	WebUI.verifyMatch(tooLongErrorMessage, 'Max length not greater than 1024', false)
+	WebUI.verifyMatch(tooLongErrorMessage, 'You have exceeded the maximum allowed limit of 1024 characters for your Ask description.', false)
 	
 	System.out.println(tooLongErrorMessage)
 } finally {
